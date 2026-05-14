@@ -4,3 +4,6 @@
 
 
 (date && echo -e "\n" && cat /proc/net/dev && echo -e "\n------------------------------\n") >>  ./statistics/netinfo.txt
+
+
+(date && echo -e "\n" && grep '^cpu ' /proc/stat && echo -e "\n------------------------------\n") >>  ./statistics/cpu-stats.txt
